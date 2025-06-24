@@ -3,6 +3,9 @@
 //==============================================================================
 MainComponent::MainComponent()
 {
+    //Boutton en haut a gauche
+    addAndMakeVisible(UpLeftButtun);
+
     setSize (800, 600);
 }
 
@@ -26,4 +29,7 @@ void MainComponent::resized()
     // This is called when the MainComponent is resized.
     // If you add any child components, this is where you should
     // update their positions.
+
+    UpLeftButtun.setBounds( 10, 10, 50, 50);
+    
 }
